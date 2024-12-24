@@ -133,10 +133,14 @@ html {
 										ADVANTAGES
    ========================================================================================================== */
 .fh5co-advantages-outer {
-  padding: 70px;
+  padding: 10% 0;
   height: auto;
   width: 100%;
   overflow: hidden;
+
+  img {
+    width: 100%;
+  }
 }
 .fh5co-advantages-outer .span-perfect {
   color: #228f40;
