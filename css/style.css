@@ -47,6 +47,11 @@ html {
   font-weight: 500;
 }
 
+.navbar-brand img {
+  width: 130px;
+  margin: 35px 0;
+}
+
 .main-navbar-nav {
   color: #fff !important;
 }
@@ -63,11 +68,11 @@ html {
   transition: all 0.33s ease;
 }
 .main-navbar-nav .active {
-  color: #fff !important;
+  color: #228f40 !important;
   opacity: 1 !important;
 }
 .main-navbar-nav a {
-  color: #fff !important;
+  color: #228f40 !important;
 }
 .main-navbar-nav .nav-link {
   opacity: 1 !important;
@@ -91,11 +96,10 @@ html {
 }
 
 .fh5co-hero-inner {
-  margin-top: 110px;
   position: relative;
 }
 .fh5co-hero-inner > h1 {
-  color: #fff;
+  color: #228f40;
   font-weight: 300;
   font-size: 55px;
   letter-spacing: 2px;
@@ -103,7 +107,7 @@ html {
 .fh5co-hero-inner > p {
   width: 400px;
   font-size: 14px;
-  color: #fff;
+  color: #228f40;
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 2em;
@@ -134,7 +138,6 @@ html {
    ========================================================================================================== */
 .fh5co-advantages-outer {
   padding: 10% 0;
-  margin: 10% 0;
   height: auto;
   width: 100%;
   overflow: hidden;
@@ -201,7 +204,7 @@ html {
 /* Estilos generales para las tarjetas */
 .card {
   background-color: #fff;
-  color: #333;
+  color: #228f40;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -307,7 +310,7 @@ html {
 .fh5co-features-outer {
   width: 100%;
   height: auto;
-  margin-top: -180px;
+  background: #2ca57f;
 }
 .fh5co-features-outer .col-sm-6 {
   margin-top: 80px;
@@ -320,14 +323,14 @@ html {
   position: relative;
 }
 .fh5co-features-outer .sm-6-content h1 {
-  color: #62be7b;
+  color: #fff;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 .fh5co-features-outer .sm-6-content p {
-  color: #111;
+  color: #fff;
   font-weight: 500;
   font-size: 14.5px;
   line-height: 1.8em;
