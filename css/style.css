@@ -1134,8 +1134,18 @@ ul.large-normal li::marker {
   }
 }
 @media screen and (max-width: 800px) {
+  .custom-container {
+    margin-top: 6em;
+    min-height: 90vh;
+    padding: 3em;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+  }
+
   .fh5co-hero-inner > h1 {
-    color: #fff;
+    color: #17726d;
     font-weight: 300;
     font-size: 45px;
     letter-spacing: 2px;
@@ -1278,7 +1288,7 @@ ul.large-normal li::marker {
 }
 @media screen and (max-width: 520px) {
   #fh5co-hero-wrapper {
-    height: 900px;
+    height: 100vh;
   }
 
   .fh5co-hero-inner > h1 {
@@ -1294,7 +1304,7 @@ ul.large-normal li::marker {
   }
 
   .fh5co-hero-inner .fh5co-hero-smartphone {
-    height: 450px;
+    height: 350px;
     top: 420px;
     margin-top: 70px;
   }
