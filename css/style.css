@@ -3,11 +3,21 @@
 	Twitter: http://twitter.com/fh5co
 	URL: http://freehtml5.co
 */
+
+:root {
+  --color-principal: #546c2d;
+  --color-secundario: #ffebd1;
+  --color-background-1: #134e9a;
+  --color-background-2: #7b3e09;
+  --color-texto: #333333;
+  --color-claro: #f9f4e8;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Montserrat", "sans-serif";
+  /* font-family: "Montserrat", "sans-serif"; */
 }
 
 html {
@@ -35,8 +45,11 @@ html {
 #fh5co-hero-wrapper {
   height: 800px;
   width: 100%;
-  background: url("../img/banner-bg.jpg") no-repeat center;
+  min-height: 90vh;
+  /* min-width: 100%; */
+  /* background: url(../img/background.png) no-repeat center; */
   border-radius: 0 0 50% 50% / 4%;
+  margin-bottom: 30vh;
 }
 
 .main-navbar-nav .navbar-brand {
@@ -67,11 +80,11 @@ html {
   transition: all 0.33s ease;
 }
 .main-navbar-nav .active {
-  color: #17726d !important;
+  color: var(--color-secundario) !important;
   opacity: 1 !important;
 }
 .main-navbar-nav a {
-  color: #17726d !important;
+  color: var(--color-background-1) !important;
 }
 .main-navbar-nav .nav-link {
   opacity: 1 !important;
@@ -98,15 +111,15 @@ html {
   position: relative;
 }
 .fh5co-hero-inner > h1 {
-  color: #17726d;
-  font-weight: 300;
+  color: var(--color-background-1);
+  font-weight: 800;
   font-size: 55px;
   letter-spacing: 2px;
 }
 .fh5co-hero-inner > p {
   width: 400px;
-  font-size: 14px;
-  color: #17726d;
+  font-size: 16px;
+  color: var(--color-background-1);
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 2em;
@@ -115,15 +128,14 @@ html {
   font-size: 15px;
   padding: 10px 15px;
   font-weight: 700;
-  color: #17726d;
+  color: var(--color-principal);
 }
 .fh5co-hero-inner .features-btn-first {
   font-size: 15px;
   padding: 8px 13px;
   font-weight: 400;
-  background: #17726d;
+  background: var(--color-background-1);
   color: #fff;
-  margin-left: 10px;
 }
 .fh5co-hero-inner .fh5co-hero-smartphone {
   position: absolute;
@@ -203,7 +215,7 @@ html {
 /* Estilos generales para las tarjetas */
 .card {
   background-color: #fff;
-  color: #17726d;
+  color: var(--color-principal);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -257,7 +269,7 @@ html {
   color: #000;
 }
 .card-2.color-2 {
-  background-color: #17726d;
+  background-color: var(--color-principal);
   color: #eae4d2;
 }
 
@@ -340,7 +352,7 @@ html {
 .hero-banner {
   position: relative;
   background: #fff;
-  color: #2ca57f;
+  color: var(--color-background-1);
   /* height: 90vh; */
   text-align: center;
   padding: 80px 20px;
@@ -354,14 +366,14 @@ html {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #2ca57f;
+  color: var(--color-background-1);
 }
 
 .hero-banner p {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
-  color: #4a665e;
+  color: var(--color-background-1);
   line-height: 1.6;
 }
 
@@ -449,7 +461,7 @@ html {
 										FEATURES
    ========================================================================================================== */
 .curved-bg-div {
-  background: url("../img/curved-bgg.jpg") no-repeat;
+  background: url("../img/curved-bgg.png") no-repeat;
   background-position: 0px -140px;
   background-size: cover;
   width: 100%;
@@ -459,7 +471,7 @@ html {
 .fh5co-features-outer {
   width: 100%;
   height: auto;
-  background: #2ca57f;
+  background: var(--color-claro);
 }
 .fh5co-features-outer .col-sm-6 {
   margin-top: 80px;
@@ -472,14 +484,14 @@ html {
   position: relative;
 }
 .fh5co-features-outer .sm-6-content h1 {
-  color: #fff;
+  color: var(--color-background-2);
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 .fh5co-features-outer .sm-6-content p {
-  color: #fff;
+  color: var(--color-background-2);
   font-weight: 500;
   font-size: 14.5px;
   line-height: 1.8em;
@@ -625,11 +637,12 @@ li {
 
 .custom-container {
   margin-top: 6em;
-  min-height: 90vh;
+  min-height: 80vh;
+  margin-bottom: 20vh;
 }
 
 .custom-container h1 {
-  color: #17726d;
+  color: var(--color-principal);
   font-size: xxx-large;
   font-weight: 900;
 }
@@ -671,7 +684,7 @@ ul.large-normal li::marker {
 .image-wrapper-2 {
   flex: 1;
   width: 100%;
-  height: 300px;
+  height: fit-content;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -757,7 +770,7 @@ ul.large-normal li::marker {
   font-size: 2.8em;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #17726d;
+  color: var(--color-principal);
 }
 
 .team-grid {
@@ -793,12 +806,12 @@ ul.large-normal li::marker {
 .team-member h3 {
   font-size: 1.4em;
   margin: 10px 0 5px;
-  color: #17726d;
+  color: var(--color-principal);
 }
 
 .role {
   font-weight: 600;
-  color: #2ca57f;
+  color: var(--color-background-2);
   font-size: 0.95em;
   margin-bottom: 10px;
 }
@@ -825,7 +838,7 @@ ul.large-normal li::marker {
   padding: 50px;
   margin-top: 200px;
   height: 250px;
-  background: #17726d;
+  background: var(--color-principal);
   overflow: hidden;
 }
 .footer-outer .footer-inner {
@@ -1148,7 +1161,7 @@ ul.large-normal li::marker {
   }
 
   .fh5co-hero-inner > h1 {
-    color: #17726d;
+    color: var(--color-background-1);
     font-weight: 300;
     font-size: 45px;
     letter-spacing: 2px;
