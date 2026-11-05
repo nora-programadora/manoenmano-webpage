@@ -53,9 +53,10 @@
 		 ========================================================================================================== -->
 
 	<div id="fh5co-hero-wrapper">
+		<header class="site-header">
 		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
 			<a class="navbar-brand" href="">
-				<img src="img/manoenmano-brown.png" alt="">
+				<img src="img/isotipo-recoloreado.png" alt="Mano en Mano">
 			</a>
 			<!-- <a class="navbar-brand" href="">Donde Entregas</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,12 +91,14 @@
 				</div>
 			</div>
 		</nav>
+		</header>
 
 		<div class="container fh5co-hero-inner">
 			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">De Mano en Mano el consumo vamos transformando</h1>
-			<p class="animated fadeIn wow" data-wow-delay="0.67s">Mano en Mano, una app para comprar y vender ropa de segunda mano de forma fácil, rapida y segura. Facilitamos el intercambio local de productos de segunda mano para reducir el impacto ambiental y fomentar la economía circular.</p>
+			<p class="animated fadeIn wow" data-wow-delay="0.67s">Mano en Mano, una app para comprar y vender ropa de segunda mano de forma fácil, rapida y segura. Facilitamos el <strong>intercambio local</strong> de productos de segunda mano para reducir el impacto ambiental y fomentar la economía circular.</p>
 			<!-- <button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#fh5co-download').goTo();return false;">Próximamente</button> -->
-			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-subscribe').goTo();return false;">Unirme a la lista de espera</button>
+			<button class="btn btn-md demo-btn-first animated fadeInLeft wow" data-wow-delay="0.85s" onclick="$('#fh5co-demo').goTo();return false;">Probar la app</button>
+			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-subscribe').goTo();return false;">Unirme al lanzamiento</button>
 			<img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="img/moda.webp" alt="Smartphone">
 		</div>
 
@@ -117,35 +120,6 @@
 			<div class="card-2 color-1">
 				<p>No hay intermediación formal que garantice calidad o seguridad en la transacción.</p>
 				<img src="img/user-satisfaction.png" alt="">
-			</div>
-		</div>
-	</div>
-	<!-- ==========================================================================================================
-													 ADVANTAGES
-		 ========================================================================================================== -->
-
-	<div class="fh5co-advantages-outer">
-		<div class="container">
-
-			<div class="row fh5co-advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s">
-				<div class="card">
-					<i class="fas fa-trash-alt fa-2x"></i>
-					<h1 class="grid-title">Más de 16.000</h1>
-					<p class="grid-desc">toneladas de ropa se tiran cada año en México. un 816% más que hace 50 años.</p>
-				</div>
-
-				<div class="card">
-					<i class="fas fa-tint fa-2x"></i>
-					<h1 class="grid-title">500 mil toneladas</h1>
-					<p class="grid-desc">de micro plásticos desembocados en los océanos anualmente, a causa de la fabricación de ropa como su lavado continuo.</p>
-				</div>
-
-				<div class="card">
-					<i class="fas fa-industry fa-2x"></i>
-					<h1 class="grid-title">300 millones</h1>
-					<p class="grid-desc">de toneladas de petróleo serán usadas para su producción en 2050 (se triplicará si la producción continúa como se pronostica).</p>
-				</div>
-
 			</div>
 		</div>
 	</div>
@@ -231,8 +205,9 @@
 				</div>
 
 				<div class="col-sm-6 in-order-2 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
-					<span class="step-badge">Paso 1 · El Vendedor</span>
+					
 					<h1>Una app para transformar el consumo sostenible</h1>
+					<span class="step-badge">Paso 1 · El Vendedor</span>
 					<p>Las personas que quieren vender sus cosas usadas suben sus productos y registran los lugares y horarios donde pueden entregar.</p>
 					<!-- <span class="circle circle-first"><i class="fab fa-instagram"></i></span>
 					<span class="circle circle-middle"><i class="fab fa-facebook"></i></span>
@@ -260,8 +235,8 @@
 	<div class="container custom-container features-flow">
 		<div class="row">
 			<div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
-				<span class="step-badge">Paso 2 · El Comprador</span>
 				<h1>Las personas que quieren comprar</h1>
+				<span class="step-badge">Paso 2 · El Comprador</span>
 				<p class="large-bold">Pueden buscar y visualizar los detalles de cada artículo así como los horarios y sucursales de Casa Blanca donde el vendedor entrega.</p>
 			</div>
 			<div class="col-sm-6 d-flex flex-column gap-3 in-order-2 wow animated fadeInRight" data-wow-delay="0.22s">
@@ -288,7 +263,7 @@
 					<ul class="large-normal">
 						<li>Elegir el horario y sucursal que mejor le convenga para recoger su paquete.</li>
 						<li>Solicitar el intercambio al vendedor mediante una solicitud de compra.</li>
-						<li>Si algo no sale bien, solicitar reagendar la entrega.</li>
+						<li>Si algo no sale bien, solicitar reagendar la entrega o cancelar.</li>
 					</ul>
 				</div>
 			</div>
@@ -300,8 +275,8 @@
 			<div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
 				<span class="step-badge">Paso 3 · El Acuerdo</span>
 				<h1>Una vez hecho el acuerdo</h1>
-				<ul class="large-normal">
-					<li>El comprador transfiere el costo del artículo — el monto se libera al vendedor solo cuando el comprador confirma que recibió el producto.</li>
+				<ul class="l arge-normal">
+					<!-- <li>El comprador transfiere el costo del artículo — el monto se libera al vendedor solo cuando el comprador confirma que recibió el producto.</li> -->
 					<li>Ambos reciben recordatorios con fecha, sucursales de entrega y recolección, y el acuerdo queda disponible en su agenda.</li>
 					<li>El vendedor tiene 48 horas para dejar el paquete en la sucursal de Casa Blanca.</li>
 					<li>Al confirmar la recepción, el pago se transfiere al vendedor y ambos se evalúan mutuamente — construyendo un sistema de confianza visible en sus perfiles.</li>
@@ -327,7 +302,7 @@
 		<div class="card-3">
 			<img src="img/ventajas-2.png" alt="Entrega inmediata">
 			<h2>Entrega inmediata y económica</h2>
-			<p>Los usuarios acuerdan hora y lugar de entrega, evitando costos altos y largas esperas.</p>
+			<p>Los usuarios acuerdan hora y lugar de entrega, evitando costos altos en paqueteria y largas esperas.</p>
 		</div>
 		<div class="card-3">
 			<img src="img/ventajas-1.png" alt="Precios accesibles">
@@ -348,33 +323,278 @@
 
 	<section class="demo-section wow animated fadeIn" data-wow-delay="0.2s" id="fh5co-demo">
 		<div class="container">
-			<h1>Explora el demo de la app</h1>
-			<p>Creamos un prototipo visual para que puedas conocer cómo se sentirá navegar dentro de Mano en Mano antes del lanzamiento.</p>
+			<h1>Ya puedes entrar a Mano en Mano</h1>
+			<p>Mano en Mano ya es real. Esta es nuestra primera versión, en desarrollo activo: crea tu cuenta, explora el catálogo y vive cómo funciona el intercambio de principio a fin. Justo ahora estamos construyendo la funcionalidad de la entrega y recolección.</p>
+			<p>Es una versión temprana, así que todavía verás detalles por pulir — y esa es justo la idea: la estamos construyendo contigo.</p>
 			<div class="demo-notice">
 				<i class="fas fa-info-circle fa-lg"></i>
 				<span>
-					Esta versión es solo representativa — es un frontend sin backend real. Puedes simular el inicio de sesión con <strong>cualquier correo y cualquier contraseña</strong>. No guardamos ni registramos ningún dato.
+					Tu cuenta es real y la cuidamos: guardamos solo lo necesario para que uses la app, no compartimos ni vendemos tu información, y no te vamos a llenar de correos.
 				</span>
 			</div>
 			<a href="https://manoenmano.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-demo">
-				<i class="fas fa-mobile-alt"></i> Ver demo de la app
+				<i class="fas fa-user-plus"></i> Crear mi cuenta
 			</a>
+			<small class="signup-microcopy">
+				<i class="fas fa-lock"></i> Tu información está protegida. No la vendemos ni la compartimos con terceros, y puedes borrar tu cuenta cuando quieras.
+			</small>
 		</div>
 	</section>
 
-	<section class="hero-banner" id="fh5co-subscribe">
-		<h1>Estamos construyendo algo increíble</h1>
-		<h2>¡Nuestro MVP está en camino! Queremos que seas parte de esta transformación.</h2>
-		<h3>Registrate para probar la primera versión de nuestra app!</h3>
-		<div data-tf-live="01JWJ6D3H7BET4QC7XS36XCXM6" class="beta-tester-form"></div>
-		<p>También puedes escribirnos al correo <strong>manoenmanomx@gmail.com</strong></p>
+	<section class="founders-section" id="fh5co-subscribe">
+		<div class="container">
 
-		<div class="survey-cta wow animated fadeIn" data-wow-delay="0.4s">
-			<p>¿Quieres ayudarnos a construir la mejor app posible?</p>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScLgC6edW51uABlIxhU0NsBzngPbpsZaZb-CgLigCqMQ6aQBQ/viewform?usp=sharing&ouid=112637791397550668187" target="_blank" rel="noopener noreferrer" class="btn-survey">
-				Responder encuesta de mercado
-			</a>
-			<small>Toma menos de 5 minutos y nos ayuda enormemente a entender qué necesitas.</small>
+			<!-- Encabezado -->
+			<header class="founders-intro wow animated fadeIn" data-wow-delay="0.1s">
+				<!-- El número de lugares se edita a mano en js/main.js (SPOTS_LEFT) -->
+				<span class="step-badge founders-spots"><i class="fas fa-fire"></i> Quedan <span id="spots-left">42</span> de 50 lugares</span>
+				<h2>Las primeras 50 son Fundadoras</h2>
+				<p>Estamos construyendo algo increíble, y queremos que seas parte desde el día uno. Las primeras 50 personas que se registren se vuelven Fundadoras de Mano en Mano — con beneficios que no se vuelven a repetir.</p>
+			</header>
+
+			<!-- Beneficios -->
+			<div class="founders-grid">
+				<article class="founders-card wow animated fadeIn" data-wow-delay="0.15s">
+					<span class="founders-icon"><i class="fas fa-certificate"></i></span>
+					<h3>Insignia permanente de Fundadora en tu perfil</h3>
+					<p>Para siempre se verá que estuviste desde el principio.</p>
+				</article>
+				<article class="founders-card wow animated fadeIn" data-wow-delay="0.2s">
+					<span class="founders-icon"><i class="fas fa-users"></i></span>
+					<h3>Círculo cerrado con la fundadora</h3>
+					<p>Un grupo privado en WhatsApp donde hablas directo con la fundadora, votas qué construimos primero y ves los avances antes que nadie.</p>
+					<small>(Cuando te incluya al grupo sabras que fuiste seleccionada como fundadora)*</small>
+				</article>
+				<article class="founders-card wow animated fadeIn" data-wow-delay="0.25s">
+					<span class="founders-icon"><i class="fas fa-percent"></i></span>
+					<h3>0% de comisión en tus primeras 10 prendas</h3>
+					<p>Y un mes de Premium gratis cuando lancemos la app móvil.</p>
+				</article>
+				<article class="founders-card wow animated fadeIn" data-wow-delay="0.3s">
+					<span class="founders-icon"><i class="fas fa-star"></i></span>
+					<h3>Prendas destacadas gratis</h3>
+					<p>Tus primeras publicaciones aparecen hasta arriba del feed durante el primer mes del lanzamiento.</p>
+				</article>
+				<article class="founders-card wow animated fadeIn" data-wow-delay="0.35s">
+					<span class="founders-icon"><i class="fas fa-bolt"></i></span>
+					<h3>Prioridad de por vida</h3>
+					<p>Soporte preferente y acceso anticipado a cada función nueva, siempre.</p>
+				</article>
+			</div>
+
+			<!-- Requisitos -->
+			<div class="founders-steps-wrap">
+				<h3 class="founders-subtitle">¿Cómo ser Fundadora?</h3>
+				<p class="founders-lead">Cumple estos tres requisitos:</p>
+				<ol class="founders-steps">
+					<li class="founders-step wow animated fadeIn" data-wow-delay="0.15s">
+						<span class="founders-step-num">1</span>
+						<h4>Regístrate en la app</h4>
+						<a href="https://manoenmano.netlify.app/" target="_blank" rel="noopener noreferrer" class="founders-link">Crea tu cuenta aquí <i class="fas fa-arrow-right"></i></a>
+					</li>
+					<li class="founders-step wow animated fadeIn" data-wow-delay="0.25s">
+						<span class="founders-step-num">2</span>
+						<h4>Contesta la encuesta de mercado</h4>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScLgC6edW51uABlIxhU0NsBzngPbpsZaZb-CgLigCqMQ6aQBQ/viewform?usp=sharing&ouid=112637791397550668187" target="_blank" rel="noopener noreferrer" class="founders-link">Responder encuesta <i class="fas fa-arrow-right"></i></a>
+						<small>Toma menos de 5 minutos.</small>
+					</li>
+					<li class="founders-step wow animated fadeIn" data-wow-delay="0.35s">
+						<span class="founders-step-num">3</span>
+						<h4>Síguenos en redes</h4>
+						<div class="founders-social">
+							<a href="https://www.instagram.com/manoenmano.mx/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+							<a href="https://www.facebook.com/profile.php?id=61576747594971" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+						</div>
+					</li>
+				</ol>
+			</div>
+
+			<!-- Llamado a la acción -->
+			<div class="founders-cta">
+				<a href="https://manoenmano.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-md demo-btn-first">Quiero ser Fundadora</a>
+				<small class="signup-microcopy">
+					<i class="fas fa-lock"></i> Tu información está protegida. No la vendemos ni la compartimos con terceros, y puedes borrar tu cuenta cuando quieras.
+				</small>
+			</div>
+
+			<!-- Privacidad -->
+			<div class="privacy-panel wow animated fadeIn" data-wow-delay="0.2s">
+				<h3 class="founders-subtitle">Tus datos son tuyos</h3>
+				<p class="founders-lead">En Mano en Mano cuidamos tu información como nos gustaría que cuidaran la nuestra.</p>
+				<ul class="privacy-grid">
+					<li>
+						<span class="privacy-icon"><i class="fas fa-ban"></i></span>
+						<div><strong>No vendemos ni rentamos tus datos.</strong> Nunca, a nadie.</div>
+					</li>
+					<li>
+						<span class="privacy-icon"><i class="fas fa-box"></i></span>
+						<div><strong>Guardamos solo lo necesario</strong> para que la app funcione: tu cuenta, tus publicaciones y lo justo para coordinar tus entregas. (Aún no almacenamos datos bancarios).</div>
+					</li>
+					<!-- <li>
+						<span class="privacy-icon"><i class="fas fa-handshake"></i></span>
+						<div><strong>Solo compartimos lo mínimo</strong> con la otra persona del intercambio y con la paquetería, y únicamente para completar tu entrega.</div>
+					</li> -->
+					<li>
+						<span class="privacy-icon"><i class="fas fa-user-edit"></i></span>
+						<div><strong>Tú mandas sobre tu información:</strong> puedes consultarla, corregirla o pedir que la borremos cuando quieras.</div>
+					</li>
+					<li>
+						<span class="privacy-icon"><i class="fas fa-lock"></i></span>
+						<div><strong>Conexión segura</strong> en todo el sitio.</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Contacto y encuesta -->
+			<div class="founders-footer">
+				<p class="founders-contact">También puedes escribirnos al correo <strong>manoenmanomx@gmail.com</strong></p>
+				<div class="survey-cta wow animated fadeIn" data-wow-delay="0.4s">
+					<p>Ayudame a construir la mejor app posible</p>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLScLgC6edW51uABlIxhU0NsBzngPbpsZaZb-CgLigCqMQ6aQBQ/viewform?usp=sharing&ouid=112637791397550668187" target="_blank" rel="noopener noreferrer" class="btn-survey">
+						Responder encuesta de mercado
+					</a>
+					<small>Toma menos de 5 minutos y nos ayuda enormemente a entender qué necesitas.</small>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ==========================================================================================================
+	                                           SOBRE LA FUNDADORA
+	     ========================================================================================================== -->
+
+	<section class="about-founder" id="fh5co-fundadora">
+		<div class="container">
+			<div class="about-founder-grid">
+				<div class="about-founder-photo wow animated fadeIn" data-wow-delay="0.2s">
+					<img src="img/noraprofile.jpeg" alt="Nora, fundadora de Mano en Mano" loading="lazy" width="1080" height="1920">
+				</div>
+				<div class="about-founder-text wow animated fadeIn" data-wow-delay="0.1s">
+					<span class="step-badge">La fundadora</span>
+					<h2>Construyo tecnología con propósito</h2>
+					<p class="about-founder-bio">Me llamo Nora Aguirre, nací y crecí en Tlaquepaque, Jalisco, México. Soy ingeniera de software con más de 7 años de experiencia. <br> Fiel creyente de que la tecnología es una herramienta para ayudar a la humanidad y al medio ambiente. Hablo sobre lo que aprendo y construyo para que la tecnología sea una herramienta al alcance de todas las personas.</p>
+					
+					<div class="about-founder-actions">
+						<!-- <a href="https://www.noraprogramadora.com/" class="btn btn-founder">Conoceme más</a> -->
+						<!-- <a href="https://www.instagram.com/noraprogramadora/" target="_blank" rel="noopener noreferrer" class="btn btn-founder btn-founder--outline btn-founder--icon" aria-label="Conoce mi contenido en Instagram" title="Conoce mi contenido en Instagram">
+							<i class="fab fa-instagram"></i>
+						</a> -->
+						<a href="https://www.instagram.com/noraprogramadora/" target="_blank" rel="noopener noreferrer" class="btn btn-founder">Conoceme más</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mi historia -->
+			<div class="founder-story">
+				<h3 class="founder-story-title wow animated fadeIn" data-wow-delay="0.1s">Cómo nació Mano en Mano?</h3>
+
+				<ol class="founder-timeline">
+					<li class="founder-moment wow animated fadeIn" data-wow-delay="0.15s">
+						<span class="founder-moment-icon"><i class="fas fa-shopping-bag"></i></span>
+						<div class="founder-moment-body">
+							<span class="founder-moment-label">En la prepa</span>
+							<p>Todo empezó en la prepa. Mi hermana y yo no teníamos mucho dinero, pero —como a cualquier chica— nos encantaba vestir bien. Así que nos íbamos a la paca: ahí aprendí que la ropa de segunda mano podía ser buenísima, original y accesible.</p>
+						</div>
+					</li>
+					<li class="founder-moment wow animated fadeIn" data-wow-delay="0.25s">
+						<span class="founder-moment-icon"><i class="fab fa-facebook-f"></i></span>
+						<div class="founder-moment-body">
+							<span class="founder-moment-label">En la universidad</span>
+							<p>En la universidad se me acabó el tiempo para ir a la paca, y me pasé a los grupos de compra-venta de Facebook. Me seguían encantando los hallazgos, pero todo era un desmadre: preguntar talla y precio, cuadrar dónde verse, perseguir el mensaje perdido entre cientos. Poco práctico, siempre.</p>
+						</div>
+					</li>
+					<li class="founder-moment wow animated fadeIn" data-wow-delay="0.35s">
+						<span class="founder-moment-icon"><i class="fas fa-graduation-cap"></i></span>
+						<div class="founder-moment-body">
+							<span class="founder-moment-label">El proyecto final</span>
+							<p>Cuando llegó el proyecto final para graduarme, la idea apareció sola: una app que hiciera fácil lo que a mí me costaba tanto trabajo. Un lugar pensado para nosotras, las nenis, donde comprar y vender de segunda mano sin el desmadre, y encontrarnos para el intercambio sin complicarnos.</p>
+						</div>
+					</li>
+				</ol>
+
+				<blockquote class="founder-story-closing wow animated fadeIn" data-wow-delay="0.2s">
+					<p><strong>Así nació Mano en Mano:</strong> de la paca de la prepa, de los grupos de Face, y de las ganas de que vestir bien y consumir distinto estuviera al alcance de todas.</p>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+
+	
+	<!-- ==========================================================================================================
+													 IMPACTO AMBIENTAL
+		 ========================================================================================================== -->
+
+	<div class="fh5co-advantages-outer">
+		<div class="container">
+
+			<div class="row fh5co-advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s">
+				<div class="card">
+					<i class="fas fa-trash-alt fa-2x"></i>
+					<h1 class="grid-title">Más de 16.000</h1>
+					<p class="grid-desc">toneladas de ropa se tiran cada año en México. un 816% más que hace 50 años.</p>
+				</div>
+
+				<div class="card">
+					<i class="fas fa-tint fa-2x"></i>
+					<h1 class="grid-title">500 mil toneladas</h1>
+					<p class="grid-desc">de micro plásticos desembocados en los océanos anualmente, a causa de la fabricación de ropa como su lavado continuo.</p>
+				</div>
+
+				<div class="card">
+					<i class="fas fa-industry fa-2x"></i>
+					<h1 class="grid-title">300 millones</h1>
+					<p class="grid-desc">de toneladas de petróleo serán usadas para su producción en 2050 (se triplicará si la producción continúa como se pronostica).</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ==========================================================================================================
+	                                         MEDIMOS EL IMPACTO
+	     ========================================================================================================== -->
+
+	<section class="impact-section" id="fh5co-impacto">
+		<div class="container">
+
+			<header class="impact-intro wow animated fadeIn" data-wow-delay="0.1s">
+				<span class="step-badge impact-badge"><i class="fas fa-leaf"></i> Impacto real</span>
+				<h2>Medimos el impacto, no solo lo prometemos</h2>
+				<p>En Mano en Mano, reducir el impacto ambiental de la moda no es un adorno: es parte del porqué existimos. Cada prenda que encuentra una segunda dueña es una prenda menos que se produce desde cero, y eso cuenta.</p>
+			</header>
+
+			<div class="impact-grid">
+				<article class="impact-card impact-card--featured wow animated fadeIn" data-wow-delay="0.15s">
+					<span class="impact-icon"><i class="fas fa-chart-line"></i></span>
+					<h3>Con números, no a ojo</h3>
+					<p>Por eso nos estamos preparando para usar ciencia de datos y medir de verdad el impacto positivo de la app —no a ojo, sino con números— y mostrártelo a ti: cuánto ahorras en agua, en residuos y en huella al darle una segunda vida a la ropa. Queremos que cada usuaria vea, en concreto, el bien que genera cada intercambio.</p>
+					<ul class="impact-metrics" aria-label="Lo que vamos a medir">
+						<li><i class="fas fa-tint"></i> Agua</li>
+						<li><i class="fas fa-trash-alt"></i> Residuos</li>
+						<li><i class="fas fa-leaf"></i> Huella</li>
+					</ul>
+				</article>
+
+				<article class="impact-card wow animated fadeIn" data-wow-delay="0.25s">
+					<span class="impact-icon"><i class="fas fa-users"></i></span>
+					<h3>Consumo responsable compartido</h3>
+					<p>Alrededor de eso vamos a crear dinámicas que hagan del consumo responsable algo vivo y compartido, no una buena intención suelta.</p>
+				</article>
+
+				<article class="impact-card wow animated fadeIn" data-wow-delay="0.35s">
+					<span class="impact-icon"><i class="fas fa-recycle"></i></span>
+					<h3>Reciclaje que te recompensa</h3>
+					<p>Y más adelante queremos ir aún más lejos: construir programas de reciclaje para la ropa que ya no se vende, donde entregarla te dé beneficios dentro de la app. Que nada se desperdicie, y que cuidar el planeta también te recompense.</p>
+				</article>
+			</div>
+
+			<p class="impact-closing wow animated fadeIn" data-wow-delay="0.2s">
+				<i class="fas fa-seedling"></i>
+				<span>Apenas estamos empezando, y esta es una de las cosas que más nos emociona construir contigo.</span>
+			</p>
+
 		</div>
 	</section>
 
@@ -426,7 +646,6 @@
 
 		</div>
 	</div> -->
-	<script src="https://embed.typeform.com/next/embed.js"></script>
 
 	<!-- ==========================================================================================================
                                                SECTION 7 - SUB FOOTER
@@ -462,6 +681,7 @@
 			<!-- <span class="border-bottom-footer"></span>  -->
 
 			<!-- <p class="copyright">&copy; 2018 App. All rights reserved. Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p> -->
+			<p class="copyright">Tratamos tus datos conforme a nuestro Aviso de Privacidad. <a href="/aviso-de-privacidad/">Consúltalo aquí</a></p>
 
 		</div>
 	</footer>

@@ -2,6 +2,9 @@
 	
 	'use strict';
 
+	// Lugares de Fundadora disponibles. Se actualiza manualmente por ahora.
+	var SPOTS_LEFT = 42;
+
 	var owlCarousel = function(){
 
         new WOW().init();
@@ -45,14 +48,30 @@
 
     $.fn.goTo = function() {
         $('html, body').animate({
-            scrollTop: $(this).offset().top + 'px'
+            scrollTop: ($(this).offset().top - $('.site-header').outerHeight()) + 'px'
         }, 'slow');
         return this; // for chaining...
     }
 
 	$(function(){
 		owlCarousel();
+
+		$('#spots-left').text(SPOTS_LEFT);
+
+		// Sombra y logo compacto al hacer scroll
+		var $header = $('.site-header');
+		var onScroll = function() {
+			$header.toggleClass('is-scrolled', $(window).scrollTop() > 10);
+		};
+		$(window).on('scroll', onScroll);
+		onScroll();
+
+		// En mobile, cerrar el menú al elegir una opción
+		$('.site-header .nav-link').on('click', function() {
+			var $collapse = $('#navbarSupportedContent');
+			if ($collapse.hasClass('show')) { $collapse.collapse('hide'); }
+		});
 	});
 
 
-}());
+}());
